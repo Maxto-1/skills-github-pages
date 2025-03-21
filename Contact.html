@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Portofolio.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="A propos.html"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="Compétence.html"><i class="fas fa-code"></i> Compétences</a></li>
+                <li><a href="Projet.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                <li><a href="Centre d'intéret.html"><i class="fas fa-heart"></i> Centres d'intérêts</a></li>
+                <li><a href="Activités Sportives.html"><i class="fas fa-futbol"></i> Activités sportives</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Contact -->
+    <main class="contact-section">
+        <h1>Contactez-moi</h1>
+        <p>Vous pouvez me contacter via le formulaire ci-dessous :</p>
+        <form action="submit-form.php" method="POST" class="contact-form">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mahamoud Kaou Ouedraogo. Tous droits réservés.</p>
+        <p><a href="Portofolio.html">Retour à l'accueil</a></p>
+    </footer>
+</body>
+</html>

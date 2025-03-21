@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personnel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</head>
+<body>cd c:\Users\kaouo\Documents\Projet
+    <!-- Section Accueil -->
+    <header id="accueil">
+        <nav>
+            <div class="branding">
+                <h1><i class="fas fa-user-circle"></i> MAHAMOUD KAOU OUEDRAOGO</h1>
+                <p><i class="fas fa-laptop-code"></i> Développeur Web | Étudiant passionné</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Portofolio.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="A propos.html"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="Compétence.html"><i class="fas fa-code"></i> Compétences</a></li>
+                <li><a href="Projet.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                <li><a href="Centre d'intéret.html"><i class="fas fa-heart"></i> Centres d'intérêts</a></li>
+                <li><a href="Activités Sportives.html"><i class="fas fa-futbol"></i> Activités sportives</a></li>
+                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2><i class="fas fa-handshake"></i> Bienvenue sur mon Portfolio</h2>
+            <p id="animated-text">Découvrez mes <span class="dynamic-text"></span></p>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="section">
+        <h2><i class="fas fa-user"></i> À propos</h2>
+        <div class="about-content">
+            <img src="ko.jpg" alt="Photo de profil" class="profile-img">
+            <p>Je suis <strong>Mahamoud Kaou Ouedraogo</strong>, un étudiant passionné par le domaine numérique. J'aime apprendre de nouvelles technologies et résoudre des problèmes complexes. Mon objectif est de devenir un développeur full-stack compétent et de contribuer à des projets innovants.</p>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <h2><i class="fas fa-tools"></i> Compétences</h2>
+        <ul class="skills-list">
+            <li><i class="fas fa-code"></i> <strong>Langages :</strong> HTML, CSS, JavaScript</li>
+            <li><i class="fas fa-cogs"></i> <strong>Frameworks :</strong> React, Django</li>
+            <li><i class="fas fa-tools"></i> <strong>Outils :</strong> Git, Docker, VS Code</li>
+            <li><i class="fas fa-file-alt"></i> <strong>Microsoft Office :</strong> Word, Excel, PowerPoint</li>
+        </ul>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <h2><i class="fas fa-project-diagram"></i> Projets</h2>
+        <div class="portfolio">
+            <div class="projet">
+                <h3><i class="fas fa-globe"></i> Projet 1 : Portfolio Personnel</h3>
+                <p>Un site web pour présenter mes compétences et projets. <a href="#">Voir le code</a></p>
+            </div>
+            <div class="projet">
+                <h3><i class="fas fa-tasks"></i> Projet 2 : Application de gestion de tâches</h3>
+                <p>Une application web permettant de gérer des tâches. <a href="#">Voir le code</a></p>
+            </div>
+            <div class="projet">
+                <h3><i class="fas fa-shopping-cart"></i> Projet 3 : Site E-commerce</h3>
+                <p>Un site de vente en ligne avec gestion des produits. <a href="#">Voir le code</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Centres d’intérêts -->
+    <section id="centres-interets" class="section">
+        <h2><i class="fas fa-heart"></i> Centres d’intérêts</h2>
+        <p>Voici quelques-unes de mes passions et activités préférées :</p>
+        <ul class="interests-list">
+            <li><i class="fas fa-plane"></i> Voyages : Découvrir de nouvelles cultures et paysages.</li>
+            <li><i class="fas fa-book"></i> Lecture : Romans, livres techniques et articles sur les nouvelles technologies.</li>
+            <li><i class="fas fa-music"></i> Musique : Écouter et jouer de la musique (guitare, piano).</li>
+            <li><i class="fas fa-laptop-code"></i> Technologies : Explorer les innovations dans le domaine numérique.</li>
+        </ul>
+    </section>
+
+    <!-- Section Activités sportives -->
+    <section id="activites-sportives" class="section">
+        <h2><i class="fas fa-futbol"></i> Activités sportives</h2>
+        <p>Le sport est une partie importante de ma vie. Voici quelques activités sportives que je pratique régulièrement :</p>
+        <ul class="sports-list">
+            <li><i class="fas fa-futbol"></i> Football : Je joue au football avec mes amis chaque week-end.</li>
+            <li><i class="fas fa-swimmer"></i> Natation : La natation est une excellente activité pour améliorer ma condition physique.</li>
+            <li><i class="fas fa-hiking"></i> Randonnée : J'adore explorer la nature et faire des randonnées dans des endroits pittoresques.</li>
+        </ul>
+    </section>
+
+    <!-- Section Formulaire de contact -->
+    <section id="contact" class="section">
+        <h2><i class="fas fa-envelope"></i> Contactez-moi</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="nom"><i class="fas fa-user"></i> Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email"><i class="fas fa-envelope"></i> Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message"><i class="fas fa-comment"></i> Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mahamoud Kaou Ouedraogo. Tous droits réservés.</p>
+        <p><a href="#accueil"><i class="fas fa-arrow-up"></i> Retour en haut</a></p>
+    </footer>
+</body>
+</html>
